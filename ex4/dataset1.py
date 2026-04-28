@@ -38,6 +38,8 @@ plt.grid()
 plt.savefig("ex1.3.png") #ex1.1.pngとして保存
 plt.show()
 
+df.to_csv("data.tsv", sep="\t", index=False)
+
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
